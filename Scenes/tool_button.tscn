@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3djlsxuh5svp"]
+
+[ext_resource type="Texture2D" uid="uid://byp78mb4pccfx" path="res://Sprites/UI/ItemBox.png" id="1_jekwd"]
+[ext_resource type="Script" uid="uid://dnwdp0tbrkdwo" path="res://Scripts/tool_button.gd" id="2_vfa5f"]
+[ext_resource type="Texture2D" uid="uid://c1yuucrij5ns0" path="res://Sprites/UI/CornSeed_Icon.png" id="3_pngsy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_344ge"]
+font_size = 32
+outline_size = 10
+outline_color = Color(0.039215688, 0.4117647, 0.039215688, 1)
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 0.7294118)
+
+[node name="ToolButton" type="TextureButton"]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 173.0
+offset_top = 489.0
+offset_right = 273.0
+offset_bottom = 589.0
+pivot_offset = Vector2(50, 50)
+texture_normal = ExtResource("1_jekwd")
+stretch_mode = 4
+script = ExtResource("2_vfa5f")
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 30.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_pngsy")
+
+[node name="QuantityText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -46.0
+offset_top = -44.0
+offset_right = -6.0
+offset_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "10"
+label_settings = SubResource("LabelSettings_344ge")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
