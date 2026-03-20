@@ -12,16 +12,16 @@ A simple 2D pixel-art farming game built in Godot. You play as a farmer on an op
 
 ## Screenshots
 
-![Day 1 - Starting out](screenshots/Screenshot%202026-03-17%20121243.png)
+![Day 1 - Starting out](Screenshots/Screenshot%202026-03-17%20121243.png)
 *Day 1, fresh field, $10 in your pocket, and a toolbelt ready to go*
 
-![Tilling the soil](screenshots/Screenshot%202026-03-17%20121420.png)
+![Tilling the soil](Screenshots/Screenshot%202026-03-17%20121420.png)
 *Tilling and seeding a plot on the first day*
 
-![Crops growing](screenshots/Screenshot%202026-03-17%20121454.png)
+![Crops growing](Screenshots/Screenshot%202026-03-17%20121454.png)
 *Day 12 - tomatoes have fully grown and are ready to harvest*
 
-![Harvesting](screenshots/Screenshot%202026-03-17%20121508.png)
+![Harvesting](Screenshots/Screenshot%202026-03-17%20121508.png)
 *Harvesting the crops brings in $50 - time to reinvest*
 
 ## Built With
